@@ -1,0 +1,435 @@
+
+{
+   "log":{
+        "daq" : [{
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":20000,
+                "startDelay":0,
+               	"storageLocation":"cloud",
+		"service":"ThingSpeak",
+		"key": "XXXXX",
+               	"uri":"http://api.thingspeak.com/channels/XXXXX/bulk_update.json",
+		"channels" : [1,2,3,4,5,6,7,8]
+        	},
+		{
+                "command":"run"
+         	}]
+    	}
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"run"
+         	}
+    	}
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"stop"
+         	}
+    	}
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"getCurrentState"
+         	}
+    	}
+}
+
+
+
+{
+   "log":{
+        "daq" : [{
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":62500000000,
+                "startDelay":0,
+               	"storageLocation":"sd0",
+               	"uri":"testlog.bin",
+		"channels" : [1,2,3,4,5,6,7,8]
+        	},
+		{
+                "command":"run",
+		"delete":true
+         	}]
+    	}
+}
+
+
+{
+   "log":{
+        "daq" : [{
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":1000000,
+                "startDelay":0,
+               	"storageLocation":"cloud",
+		"service":"ThingSpeak",
+		"key": "XXXXX,
+               	"uri":"http://api.thingspeak.com/channels/XXXXX/bulk_update.json",
+		"channels" : [1,2,3,4,5,6,7,8]
+        	}]
+    	}
+}
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":100000000000,
+                "startDelay":0,
+               	"storageLocation":"ram",
+		"service":"Thinkspeak",
+               	"uri":"foo.bar",
+		"channels" : [
+            		{"1":	{
+				    "average":32
+            			    }
+			        }
+			]
+        	}
+    	}
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"run",
+		"delete":true
+         	}
+    	}
+}
+
+
+
+{
+    "log":{
+        "daq" : {
+                "command":"read",
+                "channels":[1,2,3,4,5,6,7,8],         
+                "startIndex":0,
+                "count":-1
+                }
+    }
+}
+
+
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+                "sampleFreq":100000000000,
+                "startDelay":0,
+		        "channels" : [
+            		{"1":	{
+				    "average":32,
+                		    "storageLocation":"ram",
+                		    "uri":""
+            			    }
+			        }
+			    ]
+        	}
+    	}
+}
+
+
+{
+    "log":{
+        "daq" : {
+                "command":"read",
+                "channels":[1],         
+                "startIndex":0,
+                "count":-1
+                }
+    }
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"read",
+                "channels":[1,2,3,4,5,6,7,8],         
+                "startIndex":199380605,
+                "count":-1
+                }
+    }
+}
+
+
+
+
+
+
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":100000000,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":500000000000,
+                "startDelay":0,
+               	"storageLocation":"sd0",
+               	"uri":"testlog.bin",
+		"channels" : [
+            		{"1":	{
+				    "average":32
+            			    }
+			        }
+			]
+        	}
+    	}
+}
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":100000000,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":500000000000,
+                "startDelay":0,
+               	"storageLocation":"ram",
+		"channels" : [
+            		{"1":	{
+				    "average":32
+            			    }
+			        }
+			]
+        	}
+    	}
+}
+
+
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":62500000000,
+                "startDelay":0,
+               	"storageLocation":"ram",
+		"channels" : [1,2,3,4,5,6,7,8]
+        	}
+    	}
+}
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":62500000000,
+                "startDelay":0,
+               	"storageLocation":"ram",
+		"logOnBoot":true,
+		"channels" : [1,2,3,4,5,6,7,8]
+        	}
+    	}
+}
+
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":62500000000,
+                "startDelay":0,
+               	"storageLocation":"sd0",
+               	"uri":"testlog.bin",
+		"channels" : [1,2,3,4,5,6,7,8]
+        	}		
+    	}
+}
+
+{
+   "log":{
+        "daq" : {
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":62500000000,
+                "startDelay":0,
+               	"storageLocation":"sd0",
+               	"uri":"testlog.bin",
+		"logOnBoot":true,
+		"channels" : [1,2,3,4,5,6,7,8]
+        	}		
+    	}
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"run"
+         	}
+    	}
+}
+
+
+{
+    "log":{
+        "daq" : {
+                "command":"run",
+		"delete":true
+         	}
+    	}
+}
+
+{
+    "log":{
+        "daq" : {
+                "command":"stop"
+         	}
+    	}
+}
+
+
+{
+    "log":{
+        "daq" : {
+                "command":"getCurrentState"
+         	}
+    	}
+}
+
+{
+    "file": [{
+        "command": "listdir",
+        "type": "flash",
+        "path": "/"
+    }]
+}
+
+{
+    "file": [{
+        "command": "listdir",
+        "type": "sd0",
+        "path": "/"
+    }]
+}
+
+
+{
+	"device": [{
+			"command": "loopStatistics"
+		}
+	]
+}
+
+
+
+{
+    "file":[{
+        "command":"getFileSize",
+        "type":"sd0",
+        "path":"testlog_250006144.bin"
+    }]
+}
+
+
+
+
+{
+    "file": 
+	{
+        	"command": "delete",
+        	"type": "sd0",
+        	"path": "testlog_498892800.bin"
+    	}
+}
+
+
+{
+    "file":[{
+        "command":"getCurrentState"
+     }]
+}
+
+
+
+
+{
+   "log":{
+        "daq" : [{
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 0,
+               	"sampleFreq":30000000000,
+                "startDelay":0,
+               	"storageLocation":"ram",
+		"channels" : [1,2,3,4,5,6,7,8]
+        	},
+		{
+                "command":"run"
+         	}]
+    	}
+}
+
+
+
+{
+   "debugPrint":"on"
+}
+
+{
+	"device": [{
+			"command": "loopStatistics"
+		}
+	]
+}
+
+{  
+    "device":[  
+    {  
+        "command":"enumerate"
+    }
+    ]
+}
+
+{  
+    "device":[  
+    {  
+        "command":"resetInstruments"
+    }
+    ]
+}
+
+{
+   "log":{
+        "daq" : [{
+                "command":"setParameters",
+               	"maxSampleCount":-1,
+ 		"adcSampleFreq": 250000000000,
+               	"sampleFreq":125000000000,
+                "startDelay":0,
+               	"storageLocation":"sd0",
+               	"uri":"testlog.bin",
+		"channels" : [1]
+        	},
+		{
+                "command":"run",
+		"delete":true
+         	}]
+    	}
+}
+

@@ -1,0 +1,149 @@
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"setRegularWaveform",
+            "signalType":"sine",
+            "signalFreq":100000,
+            "vpp":3000,
+            "vOffset":0 
+         }
+      ]
+   }
+}
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"run"
+         }
+      ]
+   }
+}
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"stop"
+         }
+      ]
+   }
+}
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"setRegularWaveform",
+            "signalType":"sine",
+            "signalFreq":50,
+            "vpp":3000,
+            "vOffset":0 
+         },
+         {
+            "command":"run"
+         }
+      ]
+   }
+}
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"setRegularWaveform",
+            "signalType":"square",
+            "signalFreq":100000,
+            "vpp":2000,
+            "vOffset":-1000 
+         }      ]
+   }
+}
+
+
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"setRegularWaveform",
+            "signalType":"sine",
+            "signalFreq":9200000,
+            "vpp":3000,
+            "vOffset":0 
+         }
+      ]
+   }
+}
+
+
+{
+   "awg":{
+      "1":[
+         {
+            "command":"setRegularWaveform",
+            "signalType":"dc",
+            "signalFreq":0,
+            "vpp":0,
+            "vOffset":4000 
+         }
+      ]
+   }
+}
+
+
+
+
+
+{
+   	"awg":{
+      	"1":[
+         	{
+				"command": "setRegularWaveform",
+				"signalType": "sine",
+				"signalFreq": 1000000,
+				"vpp": 3000,
+				"vOffset": 0
+         	},
+         	{
+            	"command":"run"
+         	}
+      		]
+	}
+}
+
+
+
+{
+   	"awg":{
+      	"1":[
+         	{
+            	"command":"setRegularWaveform",
+            	"signalType":"sine",
+            	"signalFreq":1000000,
+            	"vpp":3000,
+            	"vOffset":0 
+         	},
+         	{
+            	"command":"run"
+         	}
+      	]
+   	}
+}
+
+{
+	"device": [{
+			"command": "loopStatistics"
+		}
+	]
+}
+
+{
+   "debugPrint":"on"
+}
+
+
+

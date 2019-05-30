@@ -1,0 +1,109 @@
+{
+	"dc": {
+		"1": {
+			"command": "setVoltage",
+			"voltage": 1000
+		}
+	}
+}
+
+{
+	"dc": {
+		"2": {
+			"command": "setVoltage",
+			"voltage": -1000
+		}
+	}
+}
+
+{
+	"dc": {
+		"1": {
+			"command": "setVoltage",
+			"voltage": 1000
+		},
+		"2": {
+			"command": "setVoltage",
+			"voltage": -1000
+		}
+	}
+}
+
+
+{
+   "dc":{
+      "1":
+         {
+            "command":"getVoltage"
+         }   }
+}
+
+{
+   "dc":{
+      "2":
+         {
+            "command":"getVoltage"
+         }   }
+}
+
+{
+   "dc":{
+      "1":
+         {
+            "command":"getVoltage"
+         },
+      "2":
+         {
+            "command":"getVoltage"
+         }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+   "dc":{
+      "1":[
+         {
+            "command":"getVoltage"
+         }
+      ],
+      "2":[
+         {
+            "command":"getVoltage"
+         }
+      ]
+   }
+}
+
+{
+   "debugPrint":"on"
+}
+
+{
+	"device": [{
+			"command": "loopStatistics"
+		}
+	]
+}
+
+{  
+    "device":[  
+    {  
+        "command":"enumerate"
+    }
+    ]
+}
+
+
+

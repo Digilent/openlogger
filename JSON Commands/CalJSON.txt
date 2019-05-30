@@ -1,0 +1,133 @@
+{
+	"device": [{
+			"command": "loopStatistics"
+		}
+	]
+}
+
+{
+   "device":[
+      {
+        "command":"calibrationGetInstructions",
+	"ground":true
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+        "command":"calibrationGetInstructions"
+      }
+   ]
+}
+
+{
+   "device":[
+    {
+       "command":"calibrationStart"
+    }
+   ]
+}
+
+{
+	"device": [{
+		"command": "calibrationStart",
+		"ground":true
+	}]
+}
+
+{
+	"device": [{
+		"command": "calibrationStart",
+		"ground":true,
+		"daq": [1,2,3,4,5,6,7,8]
+	}]
+}
+
+{  
+    "device":[  
+    {  
+        "command":"calibrationRead"
+    }
+    ]
+}
+
+
+{
+   "device":[
+    {
+       "command":"calibrationStart",
+      "dc": 1
+    }
+   ]
+}
+
+{
+   "device":[
+    {
+       "command":"calibrationStart",
+       "awg": 1
+    }
+   ]
+}
+
+{
+	"device": [{
+		"command": "calibrationStart",
+		"dc": [1, 2],
+		"awg": 1,
+		"daq": [1]
+	}]
+}
+
+
+{
+   "device":[
+    {
+       "command":"calibrationStart",
+       "daq": 8
+    }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"calibrationSave",
+         "type": "flash"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"calibrationSave",
+         "type": "sd0"
+      }
+   ]
+}
+
+{
+   "device":[
+    {
+       "command":"calibrationStart",
+       "dc": [1, 2],
+       "awg": 1
+    }
+   ]
+}
+
+{
+   "device":[
+    {
+       "command":"calibrationStart",
+       "dc": [1, 2]
+    }, 
+    {  
+        "command":"loopStatistics"
+    }          
+   ]
+}
+

@@ -1,0 +1,144 @@
+C0
+{
+    "file": {
+        "command":"write",
+        "type":"sd0",
+        "path":"HelloWorld.txt",
+        "filePosition":0,
+        "binaryOffset":0,
+        "binaryLength":13
+    }
+}
+D
+Hello World 5
+0
+
+BC
+{
+    "file": {
+        "command":"write",
+        "type":"sd0",
+        "path":"HWorld.txt",
+        "filePosition":0,
+        "binaryOffset":0,
+        "binaryLength":13
+    }
+}
+D
+Hello World 5
+0
+
+{
+    "file": [{
+        "command":"read",
+        "type":"sd0",
+        "path":"HelloWorld.txt",
+        "filePosition":0,
+        "requestedLength":-1
+    }]
+}
+
+C2
+{
+    "file": {
+        "command":"write",
+        "type":"flash",
+        "path":"HelloWorld.txt",
+        "filePosition":0,
+        "binaryOffset":0,
+        "binaryLength":13
+    }
+}
+D
+Hello World 2
+0
+
+{
+    "file": [{
+        "command":"read",
+        "type":"flash",
+        "path":"HelloWorld.txt",
+        "filePosition":0,
+        "requestedLength":-1
+    }]
+}
+
+{
+    "file": [{
+        "command":"read",
+        "type":"sd0",
+        "path":"HelloWorld.txt",
+        "filePosition":0,
+        "requestedLength":-1
+    }]
+}
+
+{
+    "file": [{
+        "command": "delete",
+        "type": "sd0",
+        "path": "test_11973427200.log"
+    }]
+}
+
+{
+    "file": [{
+        "command": "delete",
+        "type": "flash",
+        "path": "HelloWorld.txt"
+    }]
+}
+
+{
+    "file": [{
+        "command": "listdir",
+        "type": "sd0",
+        "path": "/"
+    }]
+}
+
+{
+    "file": [{
+        "command": "listdir",
+        "type": "flash",
+        "path": "/"
+    }]
+}
+
+{
+    "file": [{
+        "command": "getFileSize",
+        "type": "sd0",
+        "path": "HelloWorld.txt"
+    }]
+}
+
+{
+    "file": [{
+        "command": "getFileSize",
+        "type": "flash",
+        "path": "HelloWorld.txt"
+    }]
+}
+
+// this is if a file is in use for logging, writing, calibrating
+{
+    "file":{
+        "command":"getCurrentState"
+    }
+}
+
+{
+	"file": {
+		"command": "getFreeSpace",
+		"type": "sd0"
+	}
+}
+
+{
+	"file": {
+		"command": "getFreeSpace",
+		"type": "flash"
+	}
+}
+

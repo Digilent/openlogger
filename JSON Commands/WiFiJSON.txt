@@ -1,0 +1,192 @@
+{
+   "device":[
+      {
+         "command":"nicList"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"nicGetStatus",
+         "adapter":"wlan0"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiSetParameters",
+         "ssid":"SSID",         
+         "securityType":"wpa2",
+         "passphrase":"passphrase",
+         "autoConnect":false
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiSetParameters",
+         "ssid":"SSID",         
+         "securityType":"wpa",
+         "passphrase":"passphrase",
+         "autoConnect":true
+      },
+      {  
+         "command":"nicConnect",
+         "adapter":"wlan0",
+         "parameterSet":"workingParameterSet",
+         "force":true
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiSetParameters",
+         "ssid":"SSID",         
+         "securityType":"wpa2",
+         "passphrase":"passphrase",
+         "autoConnect":true
+      },
+      {  
+         "command":"nicConnect",
+         "adapter":"wlan0",
+         "parameterSet":"workingParameterSet",
+         "force":true
+      }
+   ]
+}
+
+{  
+   "device":[  
+      {  
+         "command":"nicConnect",
+         "adapter":"wlan0",
+         "parameterSet":"activeParameterSet",
+         "force":true
+      }
+   ]
+}
+
+{  
+   "device":[  
+      {  
+         "command":"nicConnect",
+         "adapter":"wlan0",
+         "parameterSet":"workingParameterSet",
+         "force":true
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"nicDisconnect",
+         "adapter":"wlan0"
+      }
+   ]
+}
+
+
+
+{
+   "device":[
+      {
+         "command":"wifiSaveParameters",
+         "storageLocation":"flash"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiSaveParameters",
+         "storageLocation":"sd0"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiLoadParameters",         
+         "storageLocation":"flash",
+         "ssid":"SSID"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiListSavedParameters",
+         "storageLocation":"flash"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiListSavedParameters",
+         "storageLocation":"sd0"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiDeleteParameters",         
+         "storageLocation":"flash",
+         "ssid":"SSID"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiDeleteParameters",         
+         "storageLocation":"flash",
+         "ssid":"SSID"
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command": "wifiScan",
+         "adapter":"wlan0",
+         "force":true
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command": "wifiScan",
+         "adapter":"wlan0",
+         "force":false
+      }
+   ]
+}
+
+{
+   "device":[
+      {
+         "command":"wifiReadScannedNetworks",
+         "adapter":"wlan0"
+      }
+   ]
+}
